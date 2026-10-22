@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "lyric-video": {
+      "command": "/home/ubuntu/lyric-video-mcp/.venv/bin/python",
+      "args": ["/home/ubuntu/lyric-video-mcp/server.py"],
+      "env": {
+        "WHISPER_DEVICE": "cpu",
+        "WHISPER_COMPUTE_TYPE": "int8"
+      }
+    }
+  }
+}

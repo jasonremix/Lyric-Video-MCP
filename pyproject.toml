@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lyric-video-mcp"
+version = "0.1.0"
+description = "Local stdio MCP server for Whisper transcription and FFmpeg lyric-video rendering"
+requires-python = ">=3.10"
+dependencies = [
+  "mcp>=1.2.0,<2",
+  "faster-whisper>=1.1.0",
+]
+
+[project.scripts]
+lyric-video-mcp = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
